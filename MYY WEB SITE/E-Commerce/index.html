@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="wrap">
+            <div class="logo-section">
+                <div class="icon">
+                    <a href="main.html">
+                        <img src="images/logo.svg" alt="Logo" class="theme-logo">
+                    </a>
+                </div>
+            </div>
+
+            <a href="index.html">
+                <h1 class="title">E-commerce</h1>
+            </a>
+            <div class="actions">
+
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">
+                  <svg id="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+
+
+
+    <section id="login-section" class="contact-section">
+        <div class="contact-container">
+            <div class="video-box">
+                <video autoplay muted loop playsinline class="side-video">
+                <source src="your-video.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <form class="auth-form">
+                <h3>Log<span>In</span></h3>
+                <div class="input-box">
+                    <input type="text" name="username" placeholder="Name" required>
+                </div>
+                <div class="input-box">
+                    <input type="password" name="password" placeholder="Password" required>
+                </div>
+                <input type="submit" value="Login" class="btn-primary-small">
+                <p>Don't have an account? <a href="#" id="show-signup">Sign up</a></p>
+            </form>
+        </div>
+    </section>
+
+    <section id="signup-section" class="contact-section" style="display: none;">
+        <div class="contact-container">
+            <div class="video-box">
+                <video autoplay muted loop playsinline class="side-video">
+                <source src="your-video.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <form class="auth-form">
+                <h3>Sign<span>Up</span></h3>
+                <div class="input-box">
+                    <input type="text" name="username" placeholder="Name" required>
+                </div>
+                <div class="input-box">
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="input-box">
+                    <input type="password" id="signup-password" name="password" placeholder="Password" required>
+                </div>
+                <div class="input-box">
+                    <input type="password" id="confirm-password" name="confirm_password" placeholder="Confirm password" required>
+                </div>
+
+                <p id="password-error" style="color: #ff4d4d; font-size: 13px; display: none; margin-top: -10px; margin-bottom: 10px;">
+                    Passwords do not match!
+                </p>
+                <input type="submit" value="Sign Up" class="btn-primary-small">
+                <p>Already have an account? <a href="#" id="show-login">Login</a></p>
+            </form>
+        </div>
+    </section>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

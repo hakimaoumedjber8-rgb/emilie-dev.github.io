@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce - Main Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="wrap">
+            <div class="logo-section">
+                <div class="icon">
+                    <a href="main.html">
+                        <img src="images/logo.svg" alt="Logo" class="theme-logo">
+                    </a>
+                </div>
+            </div>
+            <a href="index.html">
+                <h1 class="title">E-commerce</h1>
+            </a>
+            <div class="actions">
+                <div class="search">
+                    <input class="srch" type="search" placeholder="Search...">
+                    <button class="btn-primary-small">Search</button>
+                </div>
+
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">
+                  <svg id="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-wrapper">
+
+        <nav class="sidebar">
+            <div class="logo-details">
+                <i class='bx bx-shopping-bag icon'></i>
+                <div class="logo_name">E-commerce </div>
+            </div>
+
+            <ul class="nav-list">
+                <li>
+                    <a href="main.html">
+                        <i class='bx bx-home'></i> <span class="links_name"> Main Page</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="electronics.html">
+                        <i class='bx bx-laptop'></i> <span class="links_name">Electronics</span>
+                    </a>
+
+                </li>
+                <li class="current">
+                    <a href="clothing.html">
+                        <i class='bx bx-closet'></i>
+                        <span class="links_name">Clothing</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="books.html">
+                        <i class='bx bx-book'></i>
+                        <span class="links_name">Books</span>
+                    </a>
+                </li>
+                <li class="cart-link">
+                    <a href="shoppingcart.html">
+                        <i class='bx bx-cart-alt'></i>
+                        <span class="links_name">Shopping Cart</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+
+        <main class="content">
+
+
+            <section class="product-catalog">
+                <article class="product-item">
+                    <h2><b> PINK MINI DRESS</b></h2>
+                    <img src="https://i.pinimg.com/1200x/11/df/a4/11dfa4882679fe157b4d05ff2aece72b.jpg">
+                    <p>Price: <b>6200DA</b></p>
+                    <p>Elegant pink mini dress with long sleeves and a sweetheart neckline</p>
+                    <input class="cart_input" type="number" min="1" value="1">
+                    <button class="btn-cart" onclick="addToCart(event, 'PINK MINI DRESS', 6200)">Add to Cart</button>
+
+                </article>
+
+                <article class="product-item">
+                    <h2><b> BLACK HEELS </b></h2>
+                    <img src="https://i.pinimg.com/1200x/f7/97/a0/f797a09a7bba92119093c6ec7eef31a5.jpg">
+                    <p>Price: <b>12000DA</b></p>
+                    <p>Black strappy heels with a pointed toe and elegent design</p>
+                    <input class="cart_input" type="number" min="1" value="1">
+                    <button class="btn-cart" onclick="addToCart(event, 'BLACK HEELS', 12000)">Add to Cart</button>
+                </article>
+
+                <article class="product-item">
+                    <h2><b> BURGUNDY MIDI DRESS </b></h2>
+                    <img src="https://i.pinimg.com/1200x/bb/52/43/bb5243b8c36b90d39bcca2ff96a26f5d.jpg">
+                    <p>Price: <b>8900DA</b></p>
+                    <p> Burgundy midi dress with thin straps and a flared design</p>
+                    <input class="cart_input" type="number" min="1" value="1">
+                    <button class="btn-cart" onclick="addToCart(event, 'BURGUNDY MIDI DRESS' , 8900)">Add to Cart</button>
+                </article>
+            </section>
+        </main>
+
+        <aside class="right-sidebar">
+            <div class="aside-box">
+                <h3>Guidelines</h3>
+                <p class="scrolling-text">Check our return policy carefully.</p>
+            </div>
+            <div class="aside-box">
+                <h3>Cart Summary</h3>
+                <div id="cart-summary"></div>
+                <p id="total-items">Items: 0</p>
+                <p id="total-price">Total: 0 DA</p>
+            </div>
+        </aside>
+    </div>
+    <footer class="footer-section">
+        <div class="footer-content">
+          
+
+            <div class="participant">
+                <p><i class="fas fa-user"></i> FRAGUA Emilie</p>
+                <p><i class="fas fa-envelope"></i> fraguaemily70@gmail.com</p>
+                <p><i class="fas fa-id-badge"></i> Group 08/ Section 1</p>
+            </div>
+
+          
+
+        <div class="footer-bottom">
+            <p>© 2026 E-Commerce Project - UMBB Faculty of Science</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="wrap">
+            <div class="logo-section">
+                <div class="icon">
+                    <img src="images/logo.svg" alt="Logo" class="theme-logo">
+                </div>
+            </div>
+            <a href="index.html">
+                <h1 class="title">E-commerce</h1>
+            </a>
+            <div class="actions">
+                <div class="search">
+                    <input class="srch" type="search" placeholder="Search...">
+                    <button class="btn-primary-small">Search</button>
+                </div>
+
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">
+                  <svg id="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="main">
+
+        <div class="main-wrapper">
+            <nav class="sidebar">
+                <div class="logo-details">
+                    <i class='bx bx-shopping-bag icon'></i>
+                    <div class="logo_name">E-commerce </div>
+                </div>
+
+                <ul class="nav-list">
+                    <li class="current">
+                        <a href="main.html">
+                            <i class='bx bx-home'></i> <span class="links_name"> Main Page</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="electronics.html">
+                            <i class='bx bx-laptop'></i> <span class="links_name">Electronics</span>
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="clothing.html">
+                            <i class='bx bx-closet'></i>
+                            <span class="links_name">Clothing</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="books.html">
+                            <i class='bx bx-book'></i>
+                            <span class="links_name">Books</span>
+                        </a>
+                    </li>
+                    <li class="cart-link">
+                        <a href="shoppingcart.html">
+                            <i class='bx bx-cart-alt'></i>
+                            <span class="links_name">Shopping Cart</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <main class="content">
+
+
+                <section class="product-catalog">
+                    <article class="product-item">
+                        <h2><b>books</b></h2>
+                        <img src="https://i.pinimg.com/736x/46/fb/e5/46fbe5b0ce958002fb66d9e5d7568236.jpg">
+                        <a href="books.html"> <button class="btn-cart">Start shopping</button></a>
+                        <a href="main.html#books-sec"><button class="btn-cart" >More details</button></a>
+
+
+                    </article>
+
+                    <article class="product-item">
+                        <h2><b> clothing</b></h2>
+                        <img src="https://i.pinimg.com/1200x/76/52/7d/76527d37ef34bcdddd8b749629f381b4.jpg">
+                        <a href="clothing.html"> <button class="btn-cart">Start shopping</button></a>
+                        <a href="main.html#clothing-sec"><button class="btn-cart" >More details</button></a>
+                    </article>
+
+                    <article class="product-item">
+                        <h2><b>electronics</b></h2>
+                        <img src="https://i.pinimg.com/736x/90/93/a4/9093a471423c9c7b635bb55253b7a837.jpg">
+                        <a href="electronics.html"> <button class="btn-cart">Start shopping</button></a>
+                        <a href="main.html#electronic-sec"><button class="btn-cart" >More details</button></a>
+                    </article>
+                </section>
+                <h1 class="our-categories">Our categories </h1>
+                <section class="articles-section">
+
+                    <article id="electronic-sec" class="product-item participant">
+                        <h1>Electronics</h1>
+                        <p>Explore our range of modern electronics built to simplify your life. From smartphones and laptops to smart gadgets, we provide reliable, high-performance products at competitive prices. Stay connected, productive, and up to date
+                            with the latest technology
+                        </p>
+                        <ul>
+                            <li>OrwIPHONE 17 PRO MAX PINK</li>
+                            <li>SMART TV</li>
+                            <li>MACBOOK </li>
+                        </ul>
+                    </article>
+
+                    <article id="clothing-sec" class="product-item participant">
+                        <h1>Clothing</h1>
+                        <p>Discover our stylish clothing collection designed for every occasion. From casual everyday outfits to elegant pieces, we offer high-quality fashion that combines comfort, trend, and affordability. Stay confident and express your
+                            style with our latest arrivals</p>
+                        <ul>
+                            <li>PINK MINI DRESS</li>
+                            <li> BLACK HEELS </li>
+                            <li>BURGUNDY MIDI DRESS </li>
+                        </ul>
+                    </article>
+
+                    <article id="books-sec" class="product-item participant">
+                        <h1>Books</h1>
+                        <p>Dive into a world of knowledge and imagination with our book collection. Whether you enjoy novels, educational books, or self-development, we offer a variety of titles for every reader. Discover new stories, learn new skills, and
+                            fuel your passion for reading</p>
+                        <ul>
+                            <li>Orwell mil neuf cent quatre-vingt-quatre</li>
+                            <li>Stefan Zweig le joueur d'echecs</li>
+                            <li>MESSAGES FROM QURAN</li>
+                        </ul>
+                    </article>
+                </section>
+            </main>
+
+
+    </section>
+
+
+    </div>
+    <footer class="footer-section">
+        <div class="footer-content">
+          
+
+            <div class="participant">
+                <p><i class="fas fa-user"></i> FRAGUA Emilie</p>
+                <p><i class="fas fa-envelope"></i> fraguaemily70@gmail.com</p>
+                <p><i class="fas fa-id-badge"></i> Group 08/ Section 1</p>
+            </div>
+
+
+        <div class="footer-bottom">
+            <p>© 2026 E-Commerce Project - UMBB Faculty of Science</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
